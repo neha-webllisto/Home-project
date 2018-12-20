@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{%static 'Register.css'%}">
+
+</head>
+<body>
+	<center>
+		<form form action="./entry" method="get">
+			<div class="container">
+				<h1>Registration form</h1>
+				<p>Please enter your details to fill the form</p>
+
+				    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter password" name="pass" required>
+
+    <label for="psw-repeat"><b>Re-enter password</b></label>
+    <input type="password" placeholder="Re-enter password" name="repass" required="">
+
+    <label>
+    	<input type="checkbox" checked="checked" name="checkbox" style="margin-bottom: 15px">Remember me
+    </label>
+
+
+    <div class="clearfix">
+    	<button type="button" class="cancelbtn">Cancel</button>
+    	<button type="button" class="signupbtn">Sign up</button>
+
+    </div>
+			</div>
+		</form>
+
+	</center>
+</body>
+</html>
